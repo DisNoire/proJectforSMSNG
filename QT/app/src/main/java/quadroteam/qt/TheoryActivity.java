@@ -1,8 +1,8 @@
 package quadroteam.qt;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
@@ -15,7 +15,6 @@ public class TheoryActivity extends AppCompatActivity {
         setContentView(R.layout.activity_theory);
          s = getIntent().getIntExtra("lvl?", 1);
         t = (TextView)findViewById(R.id.theory);
-
 
     switch (s) {
         case 1: t.setText("1. Что такое система счисления?\n" +
@@ -67,10 +66,10 @@ public class TheoryActivity extends AppCompatActivity {
 
 
     public void startLVLTasks(View v){
-        Intent i = new Intent(this, TaskActivity.class);
+        Intent h = new Intent(this, TaskActivity.class);
         int m = getIntent().getIntExtra("lvl?", 1);
-        i.putExtra("lvl", m);
-        startActivity(i);
+        h.putExtra("lvl", m);
+        startActivity(h);
     }
 
 }

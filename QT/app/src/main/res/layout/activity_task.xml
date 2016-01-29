@@ -39,6 +39,7 @@
         android:text="next"
         android:onClick="nextExercise"
         android:id="@+id/next"
-        android:layout_weight="1"/>
+        android:layout_weight="1"
+        android:clickable="true" />
 
 </LinearLayout>
